@@ -9,3 +9,9 @@ let php;
 
 console.log(name,cnic,address,php);
 console.table([name,cnic,address,php]);
+
+
+let a = 20;
+let b = 40;
+let c = a + b;
+console.log(c);
