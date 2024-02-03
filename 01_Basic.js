@@ -15,3 +15,26 @@ let a = 20;
 let b = 40;
 let c = a + b;
 console.log(c);
+
+// Primitive Data Types
+    // string
+    // number
+    // undefined
+    // bolean
+
+
+
+// Refrenced Data Types
+// Objects
+let person = {
+    name : "Ali",
+    age : 20
+};
+
+person.name = "omer";
+person.age = 30;
+
+console.log(person.name);
+console.log(person.age);
+
+// Array
