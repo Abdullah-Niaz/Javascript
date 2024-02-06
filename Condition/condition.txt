@@ -1,0 +1,3 @@
+We have two types of conditional statements in js
+    -- if- else
+    -- switch
