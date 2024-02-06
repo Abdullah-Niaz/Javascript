@@ -1,0 +1,9 @@
+we wana do the task repeatidly
+    post Tested Loops
+        -- for loop
+        -- for in loop
+        -- for of loop
+  
+    Post Tested Loops
+        -- while loop 
+        -- do while loop
