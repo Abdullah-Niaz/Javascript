@@ -19,3 +19,9 @@ console.log(typeof isloggedin);
 let boleanconversion = Boolean(isloggedin);
 console.log(boleanconversion);
 console.log(typeof boleanconversion);
+
+// why string to number conversion if confusing
+
+let value = 3;
+let negValue = -value;
+console.log(negValue);
