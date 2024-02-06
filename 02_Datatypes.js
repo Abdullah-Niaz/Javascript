@@ -20,3 +20,7 @@ console.log(typeof(name));
 
 console.log( typeof undefined);
 console.log( typeof null);
+
+let s = ['a','b'];
+s[2] = 'c';
+console.log(s);
