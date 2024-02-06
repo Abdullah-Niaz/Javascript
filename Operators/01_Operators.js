@@ -96,3 +96,10 @@ console.log(z);
     console.log( a < b || (a + 50) < b);
     console.log();
 }
+
+
+// Terniary Operators
+
+let point = 200;
+let result = point > 150 ? "gold customer" : "Silver";
+console.log(result);
