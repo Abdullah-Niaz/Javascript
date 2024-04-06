@@ -1,3 +1,4 @@
-We have two types of conditional statements in js
+We have three types of conditional statements in js
     -- if- else
     -- switch
+    -- Ternary Operators
