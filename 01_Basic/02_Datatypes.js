@@ -1,5 +1,8 @@
 "use strict " // treat all the code as a newer js version
 
+// Data Types
+    // 1. Primitive Data Types 
+    // 2. Refrenece data Type [],(),{}
 
 // JavaScript has 8 Datatypes
     // 1. String
