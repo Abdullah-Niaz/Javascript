@@ -10,11 +10,11 @@ const arr ={
     isLoggedIn :true,
 }
 
-// console.log(arr["Full Name"]);
-// console.log(arr.name,arr.age,arr.address,arr.isLoggedIn)
-// console.table(arr)
+console.log(arr["Full Name"]);
+console.log(arr.name,arr.age,arr.address,arr.isLoggedIn)
+console.table(arr)
 // this key will act as a string and not a symbol
-// mysym: "mykey1",
+mysym: "mykey1",
 console.log(arr.mysym);
 console.log(typeof arr.mysym);
 
