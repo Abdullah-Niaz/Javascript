@@ -17,7 +17,6 @@ console.table(arr)
 mysym: "mykey1",
 console.log(arr.mysym);
 console.log(typeof arr.mysym);  
- 
 
 // if you want to use the symbol as key then use the subcript method
 // [mysym]: "mykey2",
