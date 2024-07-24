@@ -1,4 +1,4 @@
-// Nulish colesing operator 
+// Nulish colescing operator 
 // particularly designed for null and undefined
 // sometimes you work with database, and return answer may have two value
 // it check them, either it is null/undefined or some value.
