@@ -18,7 +18,7 @@ console.log(div.lastChild)
 console.log(div.ATTRIBUTE_NODE)
 
 const c = document.querySelector("div")
-const d = document.querySelectorAll("h1")
+const d = document.querySelectorAll("h1") 
 d.forEach(function(env){
     console.log(env.style.backgroundColor = "green")
 })
