@@ -19,6 +19,7 @@ console.log(div.ATTRIBUTE_NODE)
 
 const c = document.querySelector("div")
 const d = document.querySelectorAll("h1") 
+// manipulating h1 color
 d.forEach(function(env){
     console.log(env.style.backgroundColor = "green")
 })
