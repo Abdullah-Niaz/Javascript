@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Propagation Example</title>
+</head>
+<body>
+    <div id="parent">
+        <button id="child">Click Me</button>
+    </div>
+
+    <h1>Event Propagation </h1> 
+    <ul>
+        <li>
+            Event Propagation refers to the way, events flow through the DOM. When an event is triggered on a particular element
+        </li>
+        <ol>
+            <h1>There are two ways of event Propagation:</h1>
+            <li>Event Structing</li>
+                <ul>
+                    <li>The event start from the root of the document and travel to down to the target eleemnt</li>
+                </ul>
+                <li>Event Bubbling</li>
+                <ul>
+                    <li>The event start from the target element, it bubbles back up to the root</li>
+                </ul>
+            </ol>
+    </ul>
+    <script>
+        // Event listener for the parent div
+        document.getElementById('parent').addEventListener('click', function(event) {
+            alert('Parent clicked!');
+        },false);
+
+        // Event listener for the child button
+        document.getElementById('child').addEventListener('click', function(event) {
+            alert('Child clicked!');
+            // // Stop the event from bubbling up
+            // event.stopPropagation();
+        },false);
+    </script>
+</body>
+</html>
