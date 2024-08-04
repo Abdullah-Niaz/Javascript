@@ -1,0 +1,11 @@
+type
+timestamp
+defaultPrevented
+target 
+toElement 
+srcElement
+currentTarget
+altkey
+ctrlKey
+shiftKey
+keyCode
