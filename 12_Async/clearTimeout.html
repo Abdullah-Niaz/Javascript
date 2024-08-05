@@ -10,17 +10,26 @@
         <h1 id="one">
             Hello World
         </h1>
+        <button  type="button" id="start">Start</button>
         <button  type="button" id="stop">Stop</button>
     </div>
 
     <script>
         const text = document.querySelector("#one");
+        const btnStart = document.querySelector("#start")
+        const btnStop = document.querySelector("#stop")
+
 
         const changeText = function(){
             text.textContent = "Goodbye World";
             console.log("test has been changed");
         }
+
         const textChanged = setTimeout(changeText,2000);
+        btnStop.addEventListener("click",function(){
+            console.log("Stoped");
+            clearTimeout(textChanged);
+        })
         document.querySelector("#stop").addEventListener("click",function(){
             console.log("Stoped");
             clearTimeout(textChanged);
