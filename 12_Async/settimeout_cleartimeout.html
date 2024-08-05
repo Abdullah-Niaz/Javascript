@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center; /* Center the items horizontally */
+      justify-content: center; /* Center the items vertically */
+      background-color: green;
+      height: 100vh;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1 id="one">Hello World</h1>
+      <div class="btns">
+          <button type="button" id="start">Start</button>
+          <button type="button" id="stop">Stop</button>
+      </div>
+    </div>
+
+    <script>
+      const text = document.querySelector("#one");
+      const btnStart = document.querySelector("#start");
+      const btnStop = document.querySelector("#stop");
+      const bo = document.querySelector("body")
+
+      // const btns = btnStart.addEventListener('click',
+      function btns() {
+        text.textContent = "Started";
+        bo.style.backgroundColor= "red";
+        text.textContent = "We are here to rock";
+        console.log("Button clicked");
+      }
+      // )
+
+      const textChanged = setTimeout(btns, 2000);
+
+      const btnst = btnStop.addEventListener("click", function () {
+        text.textContent = "Stoped";
+        text.textContent = "oh! We can't persue";
+        console.log("Stoped");
+      });
+      clearTimeout(btnst);
+    </script>
+  </body>
+</html>
