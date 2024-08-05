@@ -10,10 +10,15 @@
         Hello world
     </h1>
     <script>
-       
-        setTimeout(() => {
-            console.log('Hello')
-        }, 2000);
+        function hello(){
+            const one = document.getElementById("one");
+            one.textContent = "Hello is replaced by settimeout 2000";
+            // console.log("Hello");
+        };
+        setTimeout(hello,2000)
+        // setTimeout(() => {
+        //     console.log('Hello')
+        // }, 2000);
     </script>
 </body>
 </html>
