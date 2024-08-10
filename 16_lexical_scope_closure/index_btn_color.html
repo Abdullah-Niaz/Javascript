@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change Example</title>
+    <style>
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #colorButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            color: rgb(197, 197, 197);
+            background-color: firebrick;
+            border: 6px solid green;
+            border-radius: 30px ;
+            top: 50%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+
+        <button id="colorButton">Click Me</button>
+    </div>
+
+    <script>
+        function setupColorChangeListener(buttonId) {
+            const colors = ["red", "green", "blue", "purple", "orange"];
+            let currentIndex = 0;
+
+            document.getElementById(buttonId).addEventListener('click', function() {
+                // Change the background color
+                this.style.backgroundColor = colors[currentIndex];
+                document.body.style.backgroundColor = colors[currentIndex]
+
+                // Move to the next color in the array
+                currentIndex = (currentIndex + 1) % colors.length;
+            });
+        }
+
+        setupColorChangeListener("colorButton");
+    </script>
+
+</body>
+</html>
